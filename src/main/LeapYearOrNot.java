@@ -9,7 +9,7 @@ public class LeapYearOrNot {
 	public boolean checkLeapYearOrNot(int year) {
 		Boolean flag = null;
 		int length=String.valueOf(year).length();
-		if((length<=4) && (length>=1)) {
+		if(length==4) {
 			if((year%400==0) || (year%4==0) && (year%100!=0) ) {
 				flag=true;
 			}

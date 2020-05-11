@@ -29,8 +29,8 @@ public class LeapYearOrNotTest {
 	 */
 	
 	@Test
-	public void checkYear1900LeapOrNot() {
-	    assertEquals(false,leapYearOrNot.checkLeapYearOrNot(1900));
+	public void checkYear1700LeapOrNot() {
+	    assertEquals(false,leapYearOrNot.checkLeapYearOrNot(1700));
 	    }
 	@Test
 	public void checkYear2100LeapOrNot() {
@@ -50,16 +50,16 @@ public class LeapYearOrNotTest {
 	 * Test method to check years not divisible by 4 are not leap year
 	 */
 	@Test
-	public void checkYear2019LeapOrNot() {
-	    assertEquals(false,leapYearOrNot.checkLeapYearOrNot(2019));
+	public void checkYear2017LeapOrNot() {
+	    assertEquals(false,leapYearOrNot.checkLeapYearOrNot(2017));
 	    }
 	
 	/**
 	 * Length Validation
 	 */
 	@Test
-	public void checkYear4LeapOrNot() {
-	    assertEquals(true,leapYearOrNot.checkLeapYearOrNot(4));
+	public void checkYear0LeapOrNot() {
+	    assertEquals(false,leapYearOrNot.checkLeapYearOrNot(0));
 	    }
 	
 	@Test
@@ -68,12 +68,12 @@ public class LeapYearOrNotTest {
 	    }
 	
 	@Test
-	public void checkYear400LeapOrNot() {
-	    assertEquals(true,leapYearOrNot.checkLeapYearOrNot(400));
+	public void checkYear123LeapOrNot() {
+	    assertEquals(false,leapYearOrNot.checkLeapYearOrNot(123));
 	    }
 	
 	@Test
-	public void checkYear50000LeapOrNot() {
-	    assertEquals(false,leapYearOrNot.checkLeapYearOrNot(50000));
+	public void checkYear54324LeapOrNot() {
+	    assertEquals(false,leapYearOrNot.checkLeapYearOrNot(54324));
 	    }
 }
